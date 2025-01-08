@@ -56,7 +56,10 @@ const PaymentSovereignty = () => {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(287px,1fr))] gap-4">
         {dataList.map((data) => {
           return (
-            <section className="group relative flex h-full min-h-[22.375rem] cursor-default flex-col gap-6 overflow-hidden rounded-xl border border-[#F6F1F1] bg-gradient-to-r from-[#FFFFFF33] to-[#FFFFFF7D] px-4 py-12 drop-shadow-[0px_4px_30px_rgba(250,_237,_255,_1)] backdrop-blur-sm hover:drop-shadow-none hover:backdrop-blur-none">
+            <section
+              key={data.title}
+              className="group relative flex h-full min-h-[22.375rem] cursor-default flex-col gap-6 overflow-hidden rounded-xl border border-[#F6F1F1] bg-gradient-to-r from-[#FFFFFF33] to-[#FFFFFF7D] px-4 py-12 drop-shadow-[0px_4px_30px_rgba(250,_237,_255,_1)] backdrop-blur-sm hover:drop-shadow-none hover:backdrop-blur-none"
+            >
               <h2 className="flex items-center text-[2rem] font-extrabold uppercase leading-8 text-primary">
                 {data.title}
               </h2>
