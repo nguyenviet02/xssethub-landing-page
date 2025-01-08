@@ -24,6 +24,9 @@ export default {
 				"2xl": ["1.5rem", "2.125rem"],
 				"5xl": ["3rem", "4.5rem"],
 			},
+			fontFamily: {
+				'inter': ["Inter", 'sans-serif']
+			},
 			colors: {
 				'primary': '#7916F3',
 				'primary-background': 'linear-gradient(90deg,#FFFFFF 0%,#FFECFB 100%)',
@@ -37,9 +40,25 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
-			fontFamily: {
-				'inter': ["Inter", 'sans-serif']
+			keyframes: {
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				fadeOut: {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' },
+				},
+				goUp: {
+					'0%': { transform: 'translateY(0.5rem)' },
+					'100%': { transform: 'translateY(0)' },
+				},
 			},
+			animation: {
+				fadeIn: 'fadeIn 0.4s ease-in forwards',
+				fadeOut: 'fadeOut 0.4s ease-out forwards',
+				goUp: 'goUp 0.3s ease-out forwards',
+			}
 		},
 		/** @type {import('fluid-tailwind').FluidThemeConfig} */
 		fluid: ({ theme }) => ({

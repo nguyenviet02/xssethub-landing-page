@@ -3,7 +3,7 @@ import { Button } from "@ui/button";
 const Hero = () => {
   return (
     <div className="hero-backgroundImage flex h-fit w-full flex-col justify-center gap-7 bg-contain ~px-[1rem]/[6.875rem] ~py-[4.875rem]/[8.25rem] md:bg-cover">
-      <div className="flex w-full max-w-[840px] flex-col font-extrabold uppercase leading-[72px] ~text-2xl/5xl">
+      <div className="flex w-full max-w-[840px] flex-col font-extrabold uppercase ~text-2xl/5xl">
         <h1 className="text-primary-text">OpenPay for eCommerce</h1>
         <h1 className="text-primary-text">OpenSource for Polkadot</h1>
         <h1 className="gradient-text">Stably through AssetHub</h1>
