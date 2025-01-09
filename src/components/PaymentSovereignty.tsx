@@ -12,7 +12,7 @@ const PaymentSovereignty = () => {
     {
       title: "FAST",
       description:
-        "Avoid intermediaries and their high fees. XssetHub Pay is the first open, direct merchant-to-consumer payment rail",
+        'Settle your transactions immediately. Xssethub can process up to 60,000 transactions per second — and has been  called the potential "Visa of the digital asset  ecosystem"',
       pattern: FastPatternImage,
       bgImage: FastBgImage,
     },
